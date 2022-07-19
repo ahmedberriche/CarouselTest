@@ -42,6 +42,14 @@ function App() {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
+        breakpoint: 1600, // for laptop large
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
