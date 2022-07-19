@@ -1,0 +1,56 @@
+/****************card*******************/
+
+.card {
+  max-width: 200px;
+}
+.parent {
+  position: relative;
+  height: 266px;
+  width: 90% !important;
+  outline: none;
+}
+
+.parent > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.slick-slider {
+  .slick-prev:before,
+  .slick-next:before {
+    color: grey !important;
+  }
+}
+
+.addIcon-container {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+.typography {
+  font-family: "Inter-light";
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.truncateText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/****************fin card*******************/

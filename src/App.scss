@@ -1,0 +1,36 @@
+.App {
+  height: 100vh;
+  background: #000000;
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+
+.carousel-container {
+  width: 60%;
+  .SampleNextArrow,
+  .SamplePrevArrow {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 40%;
+    background: #313132;
+    box-shadow: 0px -2px 4px rgba(38, 40, 47, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    img {
+      width: 12px;
+    }
+  }
+  .SampleNextArrow {
+    right: -8%;
+  }
+  .SamplePrevArrow {
+    transform: rotate(180deg);
+    left: -8%;
+  }
+}
