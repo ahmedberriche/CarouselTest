@@ -87,8 +87,10 @@ function App() {
       <div className="container">
         <div className="carousel-container">
           <Slider {...settings}>
-            {listOfImages?.image.map((item) => (
-              <Card data={item} />
+            {listOfImages?.image.map((item, index) => (
+              <div key={index}>
+                <Card data={item} />
+              </div>
             ))}
           </Slider>
         </div>
